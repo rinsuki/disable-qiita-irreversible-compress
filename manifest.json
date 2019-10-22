@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Qiitaの非可逆画像圧縮を無効化",
+    "version": "1.0.0",
+    "background": {
+        "scripts": ["redirect.js"]
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "disable-qiita-irreversible-compress@rinsuki.net"
+        }
+    },
+    "permissions": [
+        "https://qiita.com/*",
+        "https://qiita-user-contents.imgix.net/*",
+        "webRequest",
+        "webRequestBlocking"
+    ]
+}
